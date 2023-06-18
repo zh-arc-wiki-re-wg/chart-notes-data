@@ -1,6 +1,6 @@
 name: New Song Data
 description: 添加新的歌曲物量数据（单首）
-title: "【物量数据添加】"
+title: "【物量数据添加】<这里填写曲名>"
 body: 
   - type: input
     attributes:
@@ -29,4 +29,4 @@ body:
       label: BYD 难度物量（若存在该难度）
   - type: markdown
     attributes:
-      value: "感谢你的填写，祝生活愉快"
+      value: "感谢你的填写，祝生活愉快！"
