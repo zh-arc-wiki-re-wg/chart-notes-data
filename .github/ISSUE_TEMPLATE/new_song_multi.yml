@@ -1,0 +1,17 @@
+name: New Song Data(Multi)
+description: 添加新的歌曲物量数据（批量）
+title: "【物量数据批量添加】"
+body: 
+  - type: input
+    attributes:
+      label: For pack
+      description: 是在为整个曲包添加数据吗？如果是，请在这里写一下曲包名（不是id）
+  - type: textarea
+    attributes:
+      label: 请在这里粘贴代表物量的原始数据格式，最好为 json 键值对格式，格式要求详见项目 README。
+      render: json
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "感谢你的填写，祝生活愉快！"
