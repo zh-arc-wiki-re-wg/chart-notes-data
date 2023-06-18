@@ -1,0 +1,37 @@
+name: Change Song Data
+description: 更改现存的物量数据
+title: "【物量数据更改】<这里填写曲名>"
+body: 
+  - type: input
+    attributes:
+      label: songID
+      description: songlist 文件中，歌曲的 sid 字段下的值，仅由 ASCII 字母组成
+      placeholder: 如 ifi
+    validations: 
+      required: true
+  - type: checkboxes
+    attributes:
+      label: 存在问题的难度
+      description: 哪个难度的数据是错误的？
+      options:
+        - label: PST
+        - label: PRS
+        - label: FTR
+        - label: BYD
+    validations:
+      required: true
+  - type: textarea
+    attributes: 
+      label: 描述更改
+      description: 简要描述所作的更改
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 依据
+      description: 附上本次更改的依据（成绩图、官方 Online 查分数据等）
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: "感谢你的填写，祝生活愉快！"
