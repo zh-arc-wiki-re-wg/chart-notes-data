@@ -1,0 +1,32 @@
+name: New Song Data
+description: 添加新的歌曲物量数据（单首）
+title: "【物量数据添加】"
+body: 
+  - type: input
+    attributes:
+      label: songID
+      description: songlist 文件中，歌曲的 sid 字段下的值，仅由 ASCII 字母组成
+      placeholder: 如 ifi
+    validations: 
+      required: true
+  - type: input
+    attributes:
+      label: PST 难度物量
+    validations:
+      required: true
+  - type: input
+    attributes: 
+      label: PRS 难度物量
+    validations:
+      required: true
+  - type: input
+    attributes: 
+      label: FTR 难度物量
+    validations:
+      required: true
+  - type: input
+    attributes: 
+      label: BYD 难度物量（若存在该难度）
+  - type: markdown
+    attributes:
+      value: "感谢你的填写，祝生活愉快"
